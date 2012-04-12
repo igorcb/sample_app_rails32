@@ -1,7 +1,7 @@
 SampleAppRails3::Application.routes.draw do
-  get "users/new"
 
-  match '/signup',  to: 'users#new'
+#  match '/signup',  to: 'users#new'
+  resources :users
           
 
   match '/help',    to: 'static_pages#help'
